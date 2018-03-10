@@ -9,7 +9,7 @@ import org.hibernate.Session;
 import org.itstep.model.Account;
 import org.itstep.model.Good;
 import org.itstep.model.GoodAction;
-import org.itstep.util.HibernatePropertiesUtil;
+import org.itstep.util.HibernateUtil;
 
 /**
  * @author Alex Ignatenko
@@ -22,7 +22,7 @@ public class App
 
 		Good good = new Good("BAJDHG52HG", "Some name for test good", 12599);
 
-		HibernatePropertiesUtil hUtil = new HibernatePropertiesUtil();
+		HibernateUtil hUtil = new HibernateUtil();
 
 		Session session1 = hUtil.getSessionFactory().openSession();
 
